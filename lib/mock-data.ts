@@ -1,0 +1,98 @@
+import type { Product, Order } from "@/lib/types"
+
+export const mockProducts: Product[] = [
+  {
+    id: "1",
+    name: "Wireless Bluetooth Headphones",
+    description: "High-quality wireless headphones with noise cancellation and 30-hour battery life.",
+    price: 199.99,
+    category: "Electronics",
+    stock: 25,
+    imageUrl: "/wireless-bluetooth-headphones.jpg",
+    createdAt: "2024-01-01T00:00:00Z",
+    updatedAt: "2024-01-01T00:00:00Z",
+  },
+  {
+    id: "2",
+    name: "Ergonomic Office Chair",
+    description: "Comfortable ergonomic office chair with lumbar support and adjustable height.",
+    price: 299.99,
+    category: "Furniture",
+    stock: 15,
+    imageUrl: "/ergonomic-office-chair.png",
+    createdAt: "2024-01-01T00:00:00Z",
+    updatedAt: "2024-01-01T00:00:00Z",
+  },
+  {
+    id: "3",
+    name: "Stainless Steel Water Bottle",
+    description: "Insulated stainless steel water bottle that keeps drinks cold for 24 hours.",
+    price: 29.99,
+    category: "Home & Garden",
+    stock: 50,
+    imageUrl: "/stainless-steel-bottle.png",
+    createdAt: "2024-01-01T00:00:00Z",
+    updatedAt: "2024-01-01T00:00:00Z",
+  },
+  {
+    id: "4",
+    name: "Mechanical Gaming Keyboard",
+    description: "RGB mechanical gaming keyboard with customizable keys and tactile switches.",
+    price: 149.99,
+    category: "Electronics",
+    stock: 30,
+    imageUrl: "/mechanical-gaming-keyboard.jpg",
+    createdAt: "2024-01-01T00:00:00Z",
+    updatedAt: "2024-01-01T00:00:00Z",
+  },
+  {
+    id: "5",
+    name: "Yoga Mat Premium",
+    description: "Non-slip premium yoga mat with extra cushioning for comfortable practice.",
+    price: 79.99,
+    category: "Sports & Fitness",
+    stock: 40,
+    imageUrl: "/premium-yoga-mat.png",
+    createdAt: "2024-01-01T00:00:00Z",
+    updatedAt: "2024-01-01T00:00:00Z",
+  },
+  {
+    id: "6",
+    name: "Coffee Maker Deluxe",
+    description: "Programmable coffee maker with built-in grinder and thermal carafe.",
+    price: 249.99,
+    category: "Kitchen",
+    stock: 20,
+    imageUrl: "/deluxe-coffee-maker.jpg",
+    createdAt: "2024-01-01T00:00:00Z",
+    updatedAt: "2024-01-01T00:00:00Z",
+  },
+]
+
+export const mockOrders: Order[] = [
+  {
+    id: "order-1",
+    userId: "2",
+    items: [
+      {
+        product: mockProducts[0],
+        quantity: 1,
+      },
+      {
+        product: mockProducts[2],
+        quantity: 2,
+      },
+    ],
+    total: 259.97,
+    status: "delivered",
+    shippingAddress: {
+      street: "123 Main St",
+      city: "Anytown",
+      state: "CA",
+      zipCode: "12345",
+      country: "USA",
+    },
+    createdAt: "2024-01-15T00:00:00Z",
+    updatedAt: "2024-01-20T00:00:00Z",
+  },
+]

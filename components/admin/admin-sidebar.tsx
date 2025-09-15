@@ -90,12 +90,12 @@ export function AdminSidebar() {
         <div className={cn("flex items-center", isCollapsed ? "justify-center" : "space-x-3")}>
           <Avatar className="h-8 w-8">
             <AvatarFallback className="bg-sidebar-primary text-sidebar-primary-foreground">
-              {user?.name?.charAt(0) || "A"}
+              {user?.username?.charAt(0) || "A"}
             </AvatarFallback>
           </Avatar>
           {!isCollapsed && (
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-medium text-sidebar-foreground truncate">{user?.name || "Admin"}</p>
+              <p className="text-sm font-medium text-sidebar-foreground truncate">{user?.username || "Admin"}</p>
               <p className="text-xs text-sidebar-foreground/60 truncate">{user?.email}</p>
             </div>
           )}
